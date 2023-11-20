@@ -1,0 +1,158 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.right-section {
+    display: flex;
+    margin-right: 50px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 1.5em;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.cart-icon {
+    display: flex;
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    right: -10%;
+    top: -20%;
+    font-size: 8px;
+    background-color: rgb(150 120 118);
+    color: white;
+    border-radius: 50%;
+    padding: 5px; /* 조절한 부분 */
+    margin-left: 5px;
+}
+
+.cart-modal {
+    position: fixed;
+    top: 65px;
+    right: 130px;
+    width: 400px;
+    z-index: 1000;
+}
+
+.header-cart-item-container {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+.header-cart-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.header-cart-item-img {
+    width: 100px;
+    height: 135px;
+    justify-content: center;
+}
+
+.header-cart-item-img img {
+    width: 100px;
+    height: 135px;
+}
+
+.header-cart-item-info {
+    width: 205px;
+    margin-left: 30px;
+}
+
+.header-cart-item-info .category {
+    color: rgb(119 122 136);
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.header-cart-item-info .title {
+    font-size: 14px;
+    text-align: start;
+    word-wrap: break-word; /* 긴 단어를 강제로 줄 바꿈 */
+    overflow-wrap: break-word; /* 형태소 단위로도 줄 바꿈 */
+    display: inline-block; /* 강제로 줄 바꿈 적용을 위해 */
+    width: 100%; /* 최대 폭 사용 */
+}
+
+.header-cart-item-info .price {
+    font-size: 1rem;
+    margin-top: 2px;
+}
+
+.recycle-bin {
+    display: flex;
+    align-self: start;
+}
+
+.modal-total {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    justify-content: flex-end;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-total-price {
+    margin: 0 15px 15px;
+    padding: 0;
+}
+
+.header-move-cart {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.header-move-cart-button {
+    font-weight: bold;
+    background-color: white;
+    border: none;
+}
+
+.empty-cart-message {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}

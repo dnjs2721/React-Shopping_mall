@@ -1,0 +1,87 @@
+.product-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.product-list {
+    list-style: none;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.products-length {
+    margin: 20px 0 10px 50px;
+    color: rgb(119 122 136);
+}
+
+.product-item {
+    width: 300px;
+    height: 370px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid rgb(119 122 136);
+    border-radius: 10px;
+}
+
+.product-item img {
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+}
+
+.product-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 25px 25px;
+    font-weight: bold;
+}
+
+.product-item div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 25px;
+}
+
+.product-item button {
+    background-color: white;
+    color: rgb(119 122 136);
+    border: 1px solid rgb(119 122 136);
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.product-item button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.main {
+    margin: 20px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 55px;
+}
+
+.top button {
+    margin: 5px;
+    font-size: 1.2rem;
+    background-color: white;
+    border: 1px solid rgb(119 122 136);
+    border-radius: 5px;
+    padding: 15px 70px;
+    cursor: pointer;
+}
+
+.top button.selected {
+    background-color: rgb(119 122 136); /* 선택된 버튼 배경색을 검정색으로 변경 */
+    color: #fff; /* 선택된 버튼 글씨 색상을 흰색으로 변경 */
+}
